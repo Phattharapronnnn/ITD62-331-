@@ -57,7 +57,7 @@ void setup(void) {
     html += "  xhr.onreadystatechange = function() {";
     html += "    if (xhr.readyState == 4 && xhr.status == 200) {";
     html += "      var data = JSON.parse(xhr.responseText);";
-    html += "      document.getElementById('temperature').textContent = data.temperature +'°C ';";  ///ลองเพิ่มองศาแต่ยังไม่ได้รัน
+    html += "      document.getElementById('temperature').textContent = data.temperature +'°C ';"; 
     html += "      document.getElementById('humidity').textContent = data.humidity + %' %';";
     html += "    }";
     html += "  };";
